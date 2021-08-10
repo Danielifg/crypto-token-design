@@ -51,6 +51,7 @@ Note: A different infura projectId for each network is required as well as an Et
 ## Contract Specifications ###
 
  - Standard Openzepelling contract
+ - Refer to [this](https://kalis.me/verify-truffle-smart-contracts-etherscan/) article.
 
 ## Etherscan verification
 
