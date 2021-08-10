@@ -1,14 +1,21 @@
-# README #
+# Tokenization
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Initial test phase for ERC20 token fit.
+Truffle configuration will deploy contracts to any public network
+specified into truffle-config.js. 
 
-### What is this repository for? ###
+A different infura projectId for each network is required.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+To Verify/Publish on Etherscan we will use Truffle verify plugin and contract functions will be available for testing online.
 
-### How do I get set up? ###
+## Prerequisites ###
+
+* Node v14.17.0
+* Truffle v5.3.1
+* Infura Project Key
+* Etherscan API Key
+
+## Getting started ###
 
 * Summary of set up
 * Configuration
@@ -17,13 +24,14 @@ This README would normally document whatever steps are necessary to get your app
 * How to run tests
 * Deployment instructions
 
-### Contribution guidelines ###
+## Contract Deployment ###
 
-* Writing tests
-* Code review
-* Other guidelines
+ - /contracts/erc20
+ - truffle migrate --network ropsten --reset
 
-### Who do I talk to? ###
+## Contract Specifications ###
 
-* Repo owner or admin
-* Other community or team contact
+ - 
+
+## Etherscan verification
+ `truffle run verify TokenBCA  --network ropsten --debug`
