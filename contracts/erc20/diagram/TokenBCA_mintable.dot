@@ -1,0 +1,10 @@
+strict digraph {
+  mintingFinished [color=yellow]
+  mint
+  _mint
+  finishMinting
+  MintingFinished
+  mint -> _mint
+  finishMinting -> MintingFinished
+}
+

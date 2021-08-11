@@ -1,0 +1,39 @@
+strict digraph {
+  constructor
+  _mint [color=gray]
+  _beforeTokenTransfer [color=gray]
+  Transfer
+  _afterTokenTransfer [color=gray]
+  name [color=yellow]
+  symbol [color=yellow]
+  decimals [color=green]
+  totalSupply [color=yellow]
+  balanceOf [color=yellow]
+  transfer
+  _transfer [color=gray]
+  allowance [color=yellow]
+  approve
+  _approve [color=gray]
+  transferFrom
+  increaseAllowance
+  decreaseAllowance
+  _burn [color=gray]
+  Approval
+  _mint -> _beforeTokenTransfer
+  _mint -> Transfer
+  _mint -> _afterTokenTransfer
+  transfer -> _transfer
+  approve -> _approve
+  transferFrom -> _transfer
+  transferFrom -> _approve
+  increaseAllowance -> _approve
+  decreaseAllowance -> _approve
+  _transfer -> _beforeTokenTransfer
+  _transfer -> Transfer
+  _transfer -> _afterTokenTransfer
+  _burn -> _beforeTokenTransfer
+  _burn -> Transfer
+  _burn -> _afterTokenTransfer
+  _approve -> Approval
+}
+
