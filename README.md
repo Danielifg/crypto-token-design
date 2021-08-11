@@ -43,10 +43,25 @@ Note: A different infura projectId for each network is required as well as an Et
 * How to run tests
     - Run `truffle test` to run contract testing with MochaJs
 
+## Testing & Deployment Pipeline
+
 * Deployment instructions
-    - Ensure contract compilation one by one with solc [contractName]
-    - If contracts compile as expected proceed to migrate to public/local network
-    - truffle migrate --network ropsten --reset
+    - Ensure contract compilation one by one with 
+        * `solc <path/contractName>`
+    - Run Static Analysis `slither 
+        * `<path/contractName>`
+    - Run Dynamc Analysis 
+        * (Upload contract to Mythx site for a complete audit analysis)
+    - Migrate to Test Network with 
+        * `truffle migrate --network <networkName> --reset`
+    - Upload to Etherscan 
+        * `truffle run verify TokenBCA --network ropsten --debug` 
+    - Perform UAT manual testing
+    - Deploy to Mainnet with 
+        * `truffle migrate --network mainnet`
+
+    ![Testing & Deployment Pipeline](public/DeployPipeline.png)
+
 
 ## Contract Specifications ###
 
