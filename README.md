@@ -1,8 +1,6 @@
 <!-- @format -->
 
-# Tokenization Standards
-
-Token fit inits with contract standards for the ERC20 token interfaces from Openzeppelin.
+# Dapp codebase for utility token management
 
 The project contains boiler plate for a complete DApp over React, Web3 and Solidity smart contracts. For contract bundling and deployments we use truffle configuration to deploy contracts to any public network specified into truffle-config.js.
 
