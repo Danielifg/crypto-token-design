@@ -6,7 +6,7 @@ Token fit inits with contract standards for the ERC20 token interfaces from Open
 
 The project contains boiler plate for a complete DApp over React, Web3 and Solidity smart contracts. For contract bundling and deployments we use truffle configuration to deploy contracts to any public network specified into truffle-config.js.
 
-To Verify/Publish on Etherscan we will use Truffle verify plugin and contract functions will be available for testing over ehterscan website.
+To Verify/Publish on Etherscan we will use Truffle verify plugin and contract functions will be available for testing over Etherscan website.
 
 Demo: Contract on Ropsten Network [Etherscan](https://ropsten.etherscan.io/token/0xBD268AD65620B697d46D7d5b8DEEC93228af1b12)
 
